@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=width-device, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Calculadora JavaScript</title>
+
+    <link rel="icon" type="image/x-ico" href="img/calculadora.ico">
+
+    <script type="text/javascript" src="java.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&family=Syne+Mono&family=Syne+Tactile&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+    <h1>Calculadora JavaScript</h1><br>
+
+    <!--programa que leia três números inteiros e calcule a sua média aritmética.-->
+    <h3>Calcular Média Aritmética com Três Números Inteiros</h3>
+
+    <label for="n1">Primeiro número: </label>
+    <input id="n1" type="number" value=""><br><br>
+
+    <label for="n2">Segundo número: </label>
+    <input id="n2" type="number" value=""><br><br>
+
+    <label for="n3">Terceiro número: </label>
+    <input id="n3" type="number" value=""><br><br>
+
+    <button onclick="quest1()">Calcular</button>
+
+    <!--programa que leia o valor do lado de um quadrado e calcule a sua área e o seu perímetro.-->
+    <h3>Calcular Área e Perímetro de Um Quadrado a Partir da Medida do Lado</h3>
+
+    <label for="lado">Medida do lado: </label>
+    <input id="lado" type="number" value=""><br><br>
+
+    <button onclick="quest2()">Calcular</button>
+
+    <!--programa que leia o número inteiro positivo e calcule o seu dobro, o seu triplo, o seu quadrado, o seu cubo e a sua raiz quadrada.-->
+    <h3>Dobro, Triplo, Cubo, Quadrado e Raiz Quadrada de um número positivo</h3>
+
+    <label for="num">Número inteiro: </label>
+    <input id="num" type="number" value=""><br><br>
+
+    <button onclick="quest3()">Calcular</button>
+
+    <!--programa que leia o valor do raio de uma circunferência e calcule a sua área e o seu comprimento.-->
+    <h3>Área e Comprimento de uma Circunferência a Partir do Raio</h3>
+
+    <label for="raio">Medida do raio: </label>
+    <input id="raio" type="number" value=""><br><br>
+
+    <button onclick="quest4()">Calcular</button>
+
+    <!--programa que leia o valor da base e da altura de um triângulo e calcule a sua área.-->
+    <h3>Área de um triângulo a partir da base e da altura</h3>
+
+    <label for="base">Base: </label>
+    <input id="base" type="number" value=""><br><br>
+
+    <label for="alt">Altura: </label>
+    <input id="alt" type="number" value=""><br><br>
+
+    <button onclick="quest5()">Calcular</button>
+
+    <!--programa que leia o valor de uma temperatura em Celsius e calcule o seu valor correspondente em Fahrenheit e em Kelvin.-->
+    <h3>Converter Celsius em Fahrenheit e em Kelvin</h3>
+
+    <label for="cel">Graus em Celsius: </label>
+    <input id="cel" type="number" value=""><br><br>
+
+    <button onclick="quest6()">Converter</button>
+
+    <!--programa que leia o valor dos dois catetos de um triângulo retângulo e calcule o valor da hipotenusa.-->
+    <h3>Hipotenusa de um triângulo retângulo a partir dos catetos</h3>
+
+    <label for="cat1">Cateto 1: </label>
+    <input id="cat1" type="number" value=""><br><br>
+
+    <label for="cat2">Cateto 2: </label>
+    <input id="cat2" type="number" value=""><br><br>
+
+    <button onclick="quest7()">Calcular</button>
+
+    <!--programa que leia um valor em polegadas e o converta para centímetros, considerando que uma polegada equivale a 2.54 cm.-->
+    <h3>Converter polegada em centrímetros</h3>
+
+    <label for="pol">Polegada: </label>
+    <input id="pol" type="number" value=""><br><br>
+
+    <button onclick="quest8()">Converter</button>
+
+    <!--programa que leia uma palavra e calcule o seu comprimento.-->
+    <h3>Comprimento de uma palavra</h3>
+
+    <label for="pal">Palavra: </label>
+    <input id="pal" type="text" value=""><br><br>
+
+    <button onclick="quest9()">Calcular</button>
+
+    <!--programa que leia o valor de uma distância em metros e calcule o seu valor correspondente em quilômetros, hectômetros, decâmetros, centímetros, decímetros e milímetros.-->
+    <h3>Converter distância</h3>
+
+    <label for="dis">Distância em metros: </label>
+    <input id="dis" type="number" value=""><br><br>
+
+    <button onclick="quest10()">Converter</button>
+
+    <!--programa que leia um número inteiro e verifique se ele é par ou ímpar.-->
+    <h3>Verificar se um número inteiro é par ou ímpar</h3>
+
+    <label for="pori">Número: </label>
+    <input id="pori" type="number" value=""><br><br>
+
+    <button onclick="quest11()">Verificar</button>
+
+    <!--programa que leia dois números inteiros M e N e verifique se N é múltiplo de M.-->
+    <h3>Verificar múltiplos</h3>
+
+    <label for="num1">Número 1: </label>
+    <input id="num1" type="number" value=""><br><br>
+
+    <label for="num2">Número 2: </label>
+    <input id="num2" type="number" value=""><br><br>
+
+    <button onclick="quest12()">Verificar</button>
+
+    <!--programa que leia um número inteiro e verifique se ele é positivo, negativo ou neutro.-->
+    <h3>Número positivo, negativo ou neutro</h3>
+
+    <label for="pnn">Número: </label>
+    <input id="pnn" type="number" value=""><br><br>
+
+    <button onclick="quest13()">Verificar</button>
+
+    <!--programa que leia a idade de uma pessoa e verifique se ela é criança (0-12 anos), adolescente (13-17 anos), adulta (18-59) ou idosa (acima de 60 anos).-->
+    <h3>Verificação de idade</h3>
+
+    <label for="ida">Idade: </label>
+    <input id="ida" type="number" value=""><br><br>
+
+    <button onclick="quest14()">Verificar</button>
+
+    <!--programa que leia os valores dos três lados de um triângulo e o classifique como equilátero, isósceles ou escaleno.-->
+    <h3>Triângulo equilátero, isósceles ou escaleno</h3>
+
+    <label for="lad1">Lado 1: </label>
+    <input id="lad1" type="number" value=""><br><br>
+
+    <label for="lad2">Lado 2: </label>
+    <input id="lad2" type="number" value=""><br><br>
+
+    <label for="lad3">Lado 3: </label>
+    <input id="lad3" type="number" value=""><br><br>
+
+    <button onclick="quest15()">Calcular</button>
+
+    <!--programa que leia três números inteiros distintos e identifique o maior número lido.-->
+    <h3>Identificar o maior número de três</h3>
+
+    <label for="n01">Número 1: </label>
+    <input id="n01" type="number" value=""><br><br>
+
+    <label for="n02">Número 2: </label>
+    <input id="n02" type="number" value=""><br><br>
+
+    <label for="n03">Número 3: </label>
+    <input id="n03" type="number" value=""><br><br>
+
+    <button onclick="quest16()">Identificar</button>
+
+    <!--programa que leia três números inteiros distintos e identifique o maior e o menor número lido.-->
+    <h3>Identificar o maior e o menor número de três</h3>
+
+    <label for="n04">Número 1: </label>
+    <input id="n04" type="number" value=""><br><br>
+
+    <label for="n05">Número 2: </label>
+    <input id="n05" type="number" value=""><br><br>
+
+    <label for="n06">Número 3: </label>
+    <input id="n06" type="number" value=""><br><br>
+
+    <button onclick="quest17()">Identificar</button>
+
+    <!--programa que leia três números distintos e identifique o número que não é nem o menor e nem o maior número.-->
+    <h3>Identificar o número que não é o maior nem o menor de três</h3>
+
+    <label for="n07">Número 1: </label>
+    <input id="n07" type="number" value=""><br><br>
+
+    <label for="n08">Número 2: </label>
+    <input id="n08" type="number" value=""><br><br>
+
+    <label for="n09">Número 3: </label>
+    <input id="n09" type="number" value=""><br><br>
+
+    <button onclick="quest18()">Identificar</button>
+
+    <!--programa que leia dois operandos inteiros e um operador (+, -, *, /) e aplique o operador lido aos dois operandos, na ordem em que os mesmos foram digitados.-->
+    <h3>Operação simples</h3>
+
+    <label for="op1">Número 1: </label>
+    <input id="op1" type="number" value=""><br><br>
+
+    <label for="op2">Número 2: </label>
+    <input id="op2" type="number" value=""><br><br>
+
+    <label for="op">Operador(+, -, /, *):</label>
+    <input id="op" type="text" value=""><br><br>
+
+    <button onclick="quest19()">Calcular</button>
+
+    <!--programa que leia um número inteiro entre 1 e 12 correspondente a um mês do ano e verifique o trimestre a que este mês pertence.-->
+    <h3>Qual é o trimestre em que o mês se encontra</h3>
+
+    <label for="tri">Número de 1 a 12: </label>
+    <input id="tri" type="number" value=""><br><br>
+
+    <button onclick="quest20()">Verificar</button>
+
+    <br><br>
+
+    <footer>
+      <p>© Copyright Calculadora</p>
+      <p class="pfooter">Por mirelabarbosa388@gmail.com</p>
+    </footer>
+
+
+  </body>
+</html>

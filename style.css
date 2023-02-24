@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Labrada:ital@0;1&family=Raleway&display=swap');
+
+.hero_titulo {
+	color: black;
+	font-family: 'Julee', cursive;
+	font-size: 4.5rem;
+}
+.hero_desc {
+	color: black;
+	font-family: 'Julee', cursive;
+	font-size: 2rem;
+}
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.bgimage{
+	height: 100vh;
+	background: url('img/heroImage.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+
+.imagemSobre {
+	width: 100%;
+}
+
+
+.servicesText.card{
+	height: 280px;
+	cursor: pointer;
+}
+
+.servicesIcon {
+	font-size: 36px;
+	text-align: center;
+	width: 100%;
+}
+
+.card-title {
+	font-family: 'Julee', cursive;
+	text-align: center;
+}
+
+.card:hover .servicesIcon{
+	color: #622C44;
+}
+
+.servicesText:hover {
+	border: 2px solid #622C44;
+}
+
+.navbar {
+	font-family: 'Raleway', sans-serif;
+	background-color: #622C44;
+}
+.navbar a {
+	color: white;
+}
+.navbar a:hover {
+	color: #622C44;
+	background-color: #ECD8F2;
+}
+
+.contactIcon{
+	font-size: 56px;
+	color: #622C44;
+}
+
+.text-center {
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+	font-family: 'Labrada', serif;
+}
+
+.infos {
+	font-family: 'Labrada', serif;
+}
+
+.glass {
+	height: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.22);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+
+#sobre, #servicos, #portfolio, #portfolio2, #contato {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
